@@ -65,6 +65,9 @@ h1 {
 #cost-detail-container a {
     font-weight: 700;
 }
+#cost-detail-container:hover a {
+    color: #766CF1;
+}
 button {
     color: white;
     background-color: #382AE1;
@@ -78,6 +81,10 @@ button {
     box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.1903);
     margin-bottom: 24px;
 }
+button:hover {
+    background-color: #766CF1;
+}
+
 #cancel {
     font-size: 15px;
     font-weight: 900;
@@ -85,7 +92,9 @@ button {
     text-decoration: none;
     color: #717FA6;
 }
-
+#cancel:hover {
+    color: #1F2E55;
+}
 
 @media screen and (max-width: 649px) {
     #mobile-bkrd {
