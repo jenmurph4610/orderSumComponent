@@ -23,9 +23,6 @@ h1 {
     color: black;
 }
 
-h2 {
-    color: black
-}
 #description {
     font-size: 15px;
     font-weight: 500;
@@ -36,11 +33,11 @@ h2 {
     font-weight: 500;
     line-height: 19px;
     background-color: #F7F9FF;
-    ;
 }
 
 #cost-detail-container h2 {
     font-weight: 900;
+    color: black
 }
 
 #cost-detail-container a {
@@ -69,16 +66,28 @@ button {
 
 
 @media screen and (min-width: 650px) {
+    main {
+        width: 450px;
+    }
     h1 {
         font-size: 28px;
-        font-weight: 900;
         line-height: 37px;
     }
     #description {
         font-size: 16px;
-        font-weight: 500;
         line-height: 26px;
-    } 
+    }
+    #cost-detail-container {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    
+    #cost-detail-container a {
+        font-size: 14px;
+    }
+    button {
+        width: 354px;
+    }
 }
 
 
