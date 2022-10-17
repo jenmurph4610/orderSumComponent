@@ -6,6 +6,9 @@ body {
     background-color: #E0E8FF;
 }
 main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.1518);
     width: 327px;
     border-radius: 20px;
@@ -14,6 +17,7 @@ main {
 
 #card-info-container {
     background-color: white;
+    padding: 32px 24px;
 }
 
 h1 {
@@ -21,25 +25,39 @@ h1 {
     font-weight: 900;
     line-height: 29px;
     color: black;
+    margin-bottom: 16px;
 }
 
 #description {
     font-size: 15px;
     font-weight: 500;
     line-height: 25px;
+    margin-bottom: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 #cost-detail-container {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     font-weight: 500;
     line-height: 19px;
     background-color: #F7F9FF;
+    margin-bottom: 24px;
+    padding: 20px 16px;
 }
-
+#cost-detail-container img {
+    margin-right: 20px
+}
+#cost-section {
+    margin-right: 40px;
+}
 #cost-detail-container h2 {
+    font-size: 14px;
     font-weight: 900;
+    line-height: 19px;
     color: black
 }
-
 #cost-detail-container a {
     font-weight: 700;
 }
@@ -54,6 +72,7 @@ button {
     font-weight: 900;
     line-height: 20px;
     box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.1903);
+    margin-bottom: 24px;
 }
 #cancel {
     font-size: 15px;
@@ -64,29 +83,48 @@ button {
 }
 
 
+@media screen and (max-width: 649px) {
+
+}
 
 @media screen and (min-width: 650px) {
     main {
         width: 450px;
     }
+    #card-info-container {
+        padding: 48px;
+    }
     h1 {
         font-size: 28px;
         line-height: 37px;
+        margin-bottom: 17px;
     }
     #description {
         font-size: 16px;
         line-height: 26px;
+        margin-bottom: 20px;
     }
     #cost-detail-container {
         font-size: 16px;
         line-height: 21px;
+        margin-bottom: 32px;
+        padding: 25px 24px;
     }
-    
+    #cost-section {
+        margin-right: 94px;
+    }
+    #cost-detail-container h2 {
+        font-size: 16px;
+        line-height: 19px;
+
+    }
     #cost-detail-container a {
         font-size: 14px;
     }
+
     button {
         width: 354px;
+        margin-bottom: 32px;
     }
 }
 
